@@ -1,0 +1,278 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    color: #002855;
+    font-family: 'Avenir Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px auto auto 134px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "content"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+content {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.border {
+    border-top-color: rgba(0, 40, 85, 0.1);
+    border-top-style: solid;
+    border-top-width: 6px;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+#grey-background {
+    background-color: #d4dbe9;
+}
+
+.container {
+    width: 100%;
+}
+
+.containerheader {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #002855;
+    margin: 6px 0;
+}
+
+.page-header {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    height: 64px;
+    padding: 0 24px;
+    position: relative;
+    font-family: 'icomoon';
+    font-size: 24px;
+}
+
+.page-header a {
+    color: #002855;
+    text-decoration: none;
+}
+
+.page-header h2 {
+    font-size: 30px;
+    margin: 0px 0px 0px 30px;
+}
+
+.product-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background: #e6cfc8;
+    border-top-color: rgba(0, 40, 85, 0.1);
+    border-top-style: solid;
+    border-top-width: 6px;
+}
+
+.product-header img {
+    padding: 20px;
+    width: 100%;
+}
+
+.product-header ul {
+    display: flex;
+    align-self: center;
+    margin: 10px 20px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.product-header li {
+    margin: 0px 20px;
+}
+
+.product-header ul li:before {
+    content: '✓  ';
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+p{
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1  { 
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.1;
+    font-family: 'Avenir Black';
+}
+
+h2  { 
+    font-size: 30px;
+    margin:  0px 0px 0px 0px;
+}
+
+h3  { 
+    font-size: 20px;
+    margin:  0px 0px 0px 0px;
+}
+
+h5  { 
+    font-size: 40px;
+    margin:  0px 0px 0px 0px;
+    text-align: center;
+}
+
+ul  { 
+    margin:  0px 0px 10px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.otherpagebutton {
+    font-size: 20px;
+    text-align: center;
+    background-color: green;
+    border: 8px solid rgba(0,40,85,.1);
+    padding: 0px 0px 0px 00px;
+    margin: 00px 0px 0px 0px;
+}
+
+.containerbranches {
+    width: 100%;
+    height: 100%;
+}   
+
+.allbranches {
+    padding: 0 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blogpost { 
+    width: 300px;
+    height: 310px;
+    border: 2px solid black; 
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+
+.blogpost1 { 
+    width: 300px;
+    height: 310px;
+    border: 1px solid black; 
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer {
+    background: #002855;
+    padding: 20px;
+}
+
+.footer h3{
+    color: #fff;
+}
+
+.footer ul{
+    color: #fff;
+}
+
+.header2  { 
+    display: none;
+  }
+
+.navigation  { 
+    background: #002855;
+  }
+
+  .navigation2  { 
+    display: none;
+  }
+
+  .img2  { 
+    display: none;
+  }
+
+@media screen and (min-width: 1024px){
+
+    .page-header {
+        display:none;
+    }
+
+    .navigation2  { 
+        display: block;
+        margin: 3px 0px;  
+        background-color: #fff;
+    }
+
+    .navigation2  a { 
+        color: #002855;
+    }
+
+    .ulnav{ 
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          text-align: center;
+    }
+      
+    .linav{ 
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 10px;
+          text-decoration: none;
+    }
+
+}

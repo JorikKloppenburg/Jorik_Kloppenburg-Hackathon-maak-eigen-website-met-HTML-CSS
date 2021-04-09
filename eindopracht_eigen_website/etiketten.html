@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- hier zet je de code in de head tags -->
+  <title>Etiketten</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <div class="parent">
+
+    <header>
+      <div class="page-header">
+        <a href="navigation.html">
+          <div class="containerheader" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+        <a href="index.html">
+          <h2>Home</h2>
+        </a>
+      </div>
+
+      <nav class="navigation2">
+        <ul class="ulnav">
+          <li class="linav"><a href="index.html"><b>Home</b></a> </li>
+          <li class="linav"><a href="etiketten.html"><b>Etiketten</b></a> </li>
+          <li class="linav"><a href="sleeves.html"><b>Sleeves</b></a> </li>
+          <li class="linav"><a href="flexibele_verpakkingen.html"><b>Flexibele verpakkingen</b></a> </li>
+          <li class="linav"><a href="branches.html"><b>Branches</b></a> </li>
+          <li class="linav"><a href="informatie.html"><b>Informatie</b></a> </li>
+          <li class="linav"><a href="webshop.html"><b>Webshop</b></a> </li>
+          <li class="linav"><a href="contact.html"><b>Contact</b></a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="product-header">
+        <h1>Etiketten op maat laten drukken</h1>
+        <p> Producent in de voedings-, dranken-, chemie-, pharma- of cosmetica industrie?
+          Voor jouw productverpakking op maat bieden wij een breed assortiment aan etiketten.
+          Wil je meer informatie ontvangen over op maat gemaakte etiketten?
+          Vul het offerteformulier in of stuur een mail naar jorik@kloppenburg.nl Wij nemen binnen 24-uur op werkdagen
+          contact met je op.
+        </p>
+        <img width="auto" src="producten.png">
+        <ul>
+          <li>Wij beloven: in één keer goed!</li>
+          <li>Partner voor B2B</li>
+          <li>130 jaar ervaring</li>
+        </ul>
+
+      </div>
+    </main>
+
+    <content>
+      <form class="border" name="offerteformulier_etiketten" method="POST" data-netlify="true">
+        <h2>Vraag offerte aan</h2>
+        <p>Vraag eenvoudig en snel een offerte aan via dit formulier.
+          Binnen 24 uur op werkdagen nemen wij contact met je op. </p>
+        <p><label><b>Naam:</b><input type="text" name="name" /></label></p>
+        <p><label><b>Bedrijfsnaam:</b><input type="text" name="bedrijfsnaam" /></label></p>
+        <p><label><b>Email:</b><input type="email" name="email" /></label></p>
+        <p><label><b>Telefoonnummer:</b><input type="tel" name="tel" /></label></p>
+        <p><label><b>Aantal designs:</b><input type="number" name="designs" /></label> </p>
+        <p><label><b>Aantal totaal etiketten:</b><input type="number" name="etiketten" /></label> </p>
+        <p><label><b>Materiaal:</b><br>
+            <input type="radio" id="papier" name="materiaal" value="papier" />Papier<br>
+            <input type="radio" id="kunststof" name="materiaal" value="kunststof" />Kunststof<br>
+            <input type="radio" id="noideamateriaal" name="materiaal" value="noidea" />Nog geen idee<br>
+          </label>
+        </p>
+        <p><label><b>Uitstraling:</b><br>
+            <input type="radio" id="glans" name="uitstraling" value="glans" />Glanzende uitstraling<br>
+            <input type="radio" id="mat" name="uitstraling" value="mat" />Matte uitstraling<br>
+            <input type="radio" id="noideauitstraling" name="uitstraling" value="noidea" />Nog geen idee<br>
+          </label>
+        </p>
+        <p><label><b>Upload je laatste recept:</b><br>
+            <input type="file" name="file"></label></p>
+        <p><label><b>Eventuele opmerkingen;</b> moeten we nog ergens anders rekening mee houden?
+            <br>
+            <textarea name="message"></textarea></label></p>
+        <p><button type="submit">Vraag offerte aan</button></p>
+      </form>
+    </content>
+
+    <footer>
+      <div class="footer">
+        <h3>Hulp nodig?</h3>
+        <ul>
+          <li>Telefoon: 0529 012 345</li>
+          <li>Mail: jorik@kloppenburg.nl</li>
+          <li>Whatsapp: +31 6 1000 00 11</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
